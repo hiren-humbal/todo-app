@@ -5,10 +5,12 @@ const TodoList = () => {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState('');
 
+  // Handle input change
   const handleChange = (e) => {
     setNewTask(e.target.value);
   };
 
+  // Add task
   const handleClick = () => {
     if (newTask.trim()) {
       setTasks([...tasks, newTask.trim()]);
@@ -16,10 +18,12 @@ const TodoList = () => {
     }
   };
 
+  // Delete task
   const handleDelete = (index) => {
     setTasks(tasks.filter((task, i) => i !== index));
   };
 
+  // Move task up 
   const handleMoveUp = (index) => {
       const newTasks = [...tasks];
     if (index === 0) {
@@ -32,6 +36,7 @@ const TodoList = () => {
     }
   };
 
+  // Move task down
   const handleMoveDown = (index) => {
     if (index === tasks.length - 1) {
       const newTasks = [...tasks];
