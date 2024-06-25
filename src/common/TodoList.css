@@ -1,0 +1,113 @@
+/* TodoList.css */
+
+/* Container */
+.todo-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  .todo-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input and Button Container */
+  .todo-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .todo-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+  }
+  
+  .todo-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Task List */
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .todo-text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .todo-buttons {
+    display: flex;
+  }
+  
+  .move-button {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    margin-right: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .move-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .move-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .todo-delete {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todo-delete:hover {
+    background-color: #e53935;
+  }
+  
